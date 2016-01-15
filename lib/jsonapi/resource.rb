@@ -548,7 +548,7 @@ module JSONAPI
       end
 
       def find_count(filters, options = {})
-        filter_records(filters, options).count(:all)
+        filter_records(filters, options).count
       end
 
       # Override this method if you have more complex requirements than this basic find method provides
